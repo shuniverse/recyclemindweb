@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>RecycleMind Emulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <div class="heading">
+          <h1>Recycle</h1>
+          <h1>Mind</h1>
+        </div>
+        <p class="description">
+          Waste classification system designed for environmentally conscious residents of
+          Metropolitan Melbourne. It provides a unique search feature enabling users to search for
+          any item by its name, along with detailed waste classification and recycling guidance.
+          Additionally, it provides waste drop-off points on a map for items unsuitable for home
+          disposal, common waste information, customisable council selections for varied recycleing
+          rules and a recycling diary for progress monitoring.
+        </p>
+      </div>
+
+      <div class="main-content">
+        <div class="image-container">
+          <img src="demo_search.jpg" alt="demo" />
+          <img src="demo_info.jpg" alt="demo" />
+          <img src="demo_council.jpg" alt="demo" />
+          <img src="demo_diary.jpg" alt="demo" />
+        </div>
+      </div>
+      <button onclick="buttonClicked()">
+        <div class="logo">
+          <img src="app_logo.png" alt="app logo" />
+        </div>
+        <p class="button-text">play it - play it -</p>
+      </button>
+
+      <script>
+        function buttonClicked() {
+          window.open("https://appetize.io/app/wlkgr752xmjoognsmmeukq4vo4")
+        }
+
+        const text = document.querySelector(".button-text")
+        text.innerHTML = text.innerHTML
+          .split("")
+          .map((char, i) => `<span style="transform:rotate(${i * 18}deg)">${char}</span>`)
+          .join("")
+      </script>
+    </div>
+  </body>
+</html>
