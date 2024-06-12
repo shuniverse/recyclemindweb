@@ -34,15 +34,21 @@ h1 {
   letter-spacing: 20px;
   font-size: 200px;
   letter-spacing: 0.08em;
-  font-size: clamp(80px, 10vw, 165px);
+  font-size: clamp(100px, 12vw, 165px);
 }
 
 .description {
   margin: 0 50px 100px 50px;
-  font-size: clamp(16px, 1.6vw, 28px);
+  font-size: clamp(28px, 1.6vw, 30px);
   max-width: 1350px;
-  letter-spacing: 0.02em;
-  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  line-height: 1.8em;
+}
+
+@media (min-width: 744px) {
+  h1 {
+    font-size: clamp(100px, 10vw, 165px);
+  }
 }
 
 @media (min-width: 1280px) {
